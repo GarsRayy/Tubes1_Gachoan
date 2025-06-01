@@ -52,7 +52,7 @@ Fungsi pembantu seperti `distance_with_teleporter` digunakan untuk menghitung ja
 * Untuk menjalankan bot, game engine atau simulator yang digunakan biasanya akan mengimpor dan menjalankan kelas `GachoanBot` dari file `game/logic/gachoan.py` sesuai dengan mekanisme internalnya. Pastikan file `gachoan.py` berada di dalam folder `game/logic/` dalam struktur proyek yang diunggah. Kemudian pada main.py importkan logic botnya `from game.logic.gachoan import GachoanBot`
 * Inisiasi pada Controller
 init()
-BASE_URL = "http://localhost:3000/api"
+BASE_URL = "http://localhost:8082/api"
 DEFAULT_BOARD_ID = 1
 CONTROLLERS = {
     "Random": RandomLogic,
