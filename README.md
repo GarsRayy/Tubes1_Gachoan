@@ -53,8 +53,8 @@ Fungsi pembantu seperti `distance_with_teleporter` digunakan untuk menghitung ja
 
 ## iv. Author (Identitas Pembuat)
 
-* **Nama Kelompok:** [Isi dengan Nama Kelompok Anda, contoh: Gachoan Juara]
+* **Nama Kelompok:** GaChoAn
 * **Anggota Kelompok:**
-    * [Nama Anggota 1]
-    * [Nama Anggota 2]
-    * [dst...]
+    * Garis Rayya Rabbani 123140018
+    * Choirunnisa Syawaldina 123140136
+    * Anisah Octa Rohila 123140137
