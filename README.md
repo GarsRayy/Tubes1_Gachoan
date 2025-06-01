@@ -44,12 +44,20 @@ Fungsi pembantu seperti `distance_with_teleporter` digunakan untuk menghitung ja
         * `util` (berisi `get_direction`, diimpor sebagai `from ..util import get_direction` yang mengindikasikan struktur proyek tertentu di mana `util.py` berada satu level di atas direktori bot).
 * **Instalasi:**
     * Pastikan Python 3.x terinstal.
-    * Tidak ada langkah instalasi khusus untuk bot ini selain menempatkannya dalam struktur direktori yang benar sesuai dengan kebutuhan game engine/simulator yang digunakan. Bot ini (`gachoan.py`) harus ditempatkan di dalam folder `src/`.
+    * Tidak ada langkah instalasi khusus untuk bot ini selain menempatkannya dalam struktur direktori yang benar sesuai dengan kebutuhan game engine/simulator yang digunakan. Bot ini (`gachoan.py`) harus ditempatkan di dalam folder `game/logic/`.
 
 ## iii. Command atau Langkah-langkah dalam Meng-compile atau Build Program
 
 * Program ini adalah skrip Python (`.py`) dan tidak memerlukan proses kompilasi atau build khusus.
-* Untuk menjalankan bot, game engine atau simulator yang digunakan biasanya akan mengimpor dan menjalankan kelas `GachoanBot` dari file `src/gachoan.py` sesuai dengan mekanisme internalnya. Pastikan file `gachoan.py` berada di dalam folder `src` dalam struktur proyek yang diunggah.
+* Untuk menjalankan bot, game engine atau simulator yang digunakan biasanya akan mengimpor dan menjalankan kelas `GachoanBot` dari file `game/logic/gachoan.py` sesuai dengan mekanisme internalnya. Pastikan file `gachoan.py` berada di dalam folder `game/logic/` dalam struktur proyek yang diunggah. Kemudian pada main.py importkan logic botnya `from game.logic.gachoan import GachoanBot`
+* Inisiasi pada Controller
+init()
+BASE_URL = "http://localhost:3000/api"
+DEFAULT_BOARD_ID = 1
+CONTROLLERS = {
+    "Random": RandomLogic,
+    "GachoanBot" : GachoanBot
+* Panggil botnya dengan start cmd /c "python main.py --logic Gachoan --email=test992@email.com --name=stima992 --password=123456 --team etimo"
 
 ## iv. Author (Identitas Pembuat)
 
